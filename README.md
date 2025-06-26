@@ -158,7 +158,7 @@ frontend/ (React)
 4. `npm start`
 5. App runs at `http://localhost:3000`
 
-
+![Capstone Frontend Run](https://github.com/user-attachments/assets/bd64fd55-4fa3-451b-a5fd-800f967b47f1)
 
 ---
 
