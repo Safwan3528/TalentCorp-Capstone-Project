@@ -1,0 +1,7 @@
+com/expensetracker/security/UserDetailsServiceImplTest.class
+com/expensetracker/controller/AuthControllerTest.class
+com/expensetracker/security/SecurityIntegrationTest.class
+com/expensetracker/service/ExpenseServiceTest.class
+com/expensetracker/config/TestSecurityConfig.class
+com/expensetracker/ExpenseTrackerApplicationTests.class
+com/expensetracker/controller/ExpenseControllerTest.class
