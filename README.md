@@ -4,6 +4,31 @@ A modern, full-featured personal expense tracker with a **React.js frontend** an
 
 ---
 
+![capstone 1](https://github.com/user-attachments/assets/f4002dc9-4a48-4c6e-94a6-bf3c26cb92eb)
+
+![capstone 2](https://github.com/user-attachments/assets/938ff138-298e-48b6-8504-127156e753ab)
+
+![capstone 3](https://github.com/user-attachments/assets/bcaa67d8-ca8b-4f48-a138-e56e49ccfd4d)
+
+![capstone 4](https://github.com/user-attachments/assets/0b845537-264e-4caf-a303-fb3838ab3c67)
+
+![capstone 5](https://github.com/user-attachments/assets/5fbc86f4-9766-4443-bd4f-b0322f138de8)
+
+![capstone 6](https://github.com/user-attachments/assets/19d62848-5f0a-40e0-b4a5-abd9468d5c6d)
+
+![capstone 7](https://github.com/user-attachments/assets/c946ce1e-b1a6-495a-8cd4-118b10dabb22)
+
+![capstone 8](https://github.com/user-attachments/assets/c8f21441-8600-4509-b988-db6d5d1aeb12)
+
+![capstone 11](https://github.com/user-attachments/assets/df6ebef0-6e8c-4c05-b2ea-e5371aaf8da6)
+
+![capstone 9](https://github.com/user-attachments/assets/9e678692-40d6-44fd-bfb8-1e45845d0b50)
+
+![capstone 10](https://github.com/user-attachments/assets/c85996ec-3313-448c-91c0-060c400933b3)
+
+
+---
+
 ## 🚀 Features
 
 - User registration & authentication (JWT)
@@ -120,12 +145,20 @@ frontend/ (React)
 3. `mvn spring-boot:run`
 4. API runs at `http://localhost:8080`
 
+![Capstone Backend Run](https://github.com/user-attachments/assets/0cda6a11-47a0-4582-b13e-5c2e01b0e469)
+
+![Capstone Backend Run 1](https://github.com/user-attachments/assets/36521e89-d413-4fa8-a71a-b29432a03efd)
+
+
+
 ### Frontend (React)
 1. Install Node.js 16+
 2. `cd frontend`
 3. `npm install`
 4. `npm start`
 5. App runs at `http://localhost:3000`
+
+
 
 ---
 
