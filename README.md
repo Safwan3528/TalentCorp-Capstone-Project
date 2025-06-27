@@ -48,7 +48,7 @@ A modern, full-featured personal expense tracker with a **React.js frontend** an
 - **Spring Boot 3.5.0**
 - **Spring Security** (JWT)
 - **Spring Data JPA** (Hibernate)
-- **H2 Database** (In-Memory)
+- **MySQL Database** (Production-ready)
 - **JUnit 5**, **Mockito** (Testing)
 
 ### Frontend

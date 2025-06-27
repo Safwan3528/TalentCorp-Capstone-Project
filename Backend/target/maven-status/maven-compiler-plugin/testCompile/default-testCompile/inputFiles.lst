@@ -1,7 +1,7 @@
-/home/cipher/Desktop/Project/TalentCorp - Java/Java_Day9_ExpenseTrackerTemplate/src/test/java/com/expensetracker/ExpenseTrackerApplicationTests.java
-/home/cipher/Desktop/Project/TalentCorp - Java/Java_Day9_ExpenseTrackerTemplate/src/test/java/com/expensetracker/security/UserDetailsServiceImplTest.java
-/home/cipher/Desktop/Project/TalentCorp - Java/Java_Day9_ExpenseTrackerTemplate/src/test/java/com/expensetracker/security/SecurityIntegrationTest.java
-/home/cipher/Desktop/Project/TalentCorp - Java/Java_Day9_ExpenseTrackerTemplate/src/test/java/com/expensetracker/service/ExpenseServiceTest.java
-/home/cipher/Desktop/Project/TalentCorp - Java/Java_Day9_ExpenseTrackerTemplate/src/test/java/com/expensetracker/controller/AuthControllerTest.java
-/home/cipher/Desktop/Project/TalentCorp - Java/Java_Day9_ExpenseTrackerTemplate/src/test/java/com/expensetracker/controller/ExpenseControllerTest.java
-/home/cipher/Desktop/Project/TalentCorp - Java/Java_Day9_ExpenseTrackerTemplate/src/test/java/com/expensetracker/config/TestSecurityConfig.java
+/home/cipher/Desktop/Project/TalentCorp Capstone Project/Backend/src/test/java/com/expensetracker/config/TestSecurityConfig.java
+/home/cipher/Desktop/Project/TalentCorp Capstone Project/Backend/src/test/java/com/expensetracker/controller/AuthControllerTest.java
+/home/cipher/Desktop/Project/TalentCorp Capstone Project/Backend/src/test/java/com/expensetracker/ExpenseTrackerApplicationTests.java
+/home/cipher/Desktop/Project/TalentCorp Capstone Project/Backend/src/test/java/com/expensetracker/security/UserDetailsServiceImplTest.java
+/home/cipher/Desktop/Project/TalentCorp Capstone Project/Backend/src/test/java/com/expensetracker/service/ExpenseServiceTest.java
+/home/cipher/Desktop/Project/TalentCorp Capstone Project/Backend/src/test/java/com/expensetracker/controller/ExpenseControllerTest.java
+/home/cipher/Desktop/Project/TalentCorp Capstone Project/Backend/src/test/java/com/expensetracker/security/SecurityIntegrationTest.java

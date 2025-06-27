@@ -16,7 +16,7 @@ A RESTful API backend for managing personal expenses built with Spring Boot.
 - **Spring Boot 3.5.0**
 - **Spring Security** (JWT Authentication)
 - **Spring Data JPA** (Hibernate)
-- **H2 Database** (In-Memory)
+- **MySQL Database** (Production-ready)
 - **JUnit 5** and **Mockito** (Testing)
 
 ## API Endpoints
@@ -71,17 +71,48 @@ A RESTful API backend for managing personal expenses built with Spring Boot.
 ### Prerequisites
 - Java 17 or higher
 - Maven 3.6 or higher
+- MySQL 8.0 or higher
 
 ### Running the Application
 
-1. Clone the repository
-2. Navigate to the project directory
-3. Run the application:
+1. **Setup MySQL Database:**
+   ```bash
+   # Create database
+   mysql -u root -p -e "CREATE DATABASE expense_tracker_db;"
+   
+   # Or use Docker (recommended for development)
+   docker-compose up -d
+   ```
+
+2. **Configure Database Connection:**
+   Update `src/main/resources/application.properties` with your MySQL credentials:
+   ```properties
+   spring.datasource.username=your_mysql_username
+   spring.datasource.password=your_mysql_password
+   ```
+
+3. **Run the application:**
    ```bash
    mvn spring-boot:run
    ```
 
 The application will start on `http://localhost:8080`
+
+### Database Setup Options
+
+#### Option 1: Local MySQL Installation
+1. Install MySQL Server
+2. Create database: `CREATE DATABASE expense_tracker_db;`
+3. Update application.properties with credentials
+
+#### Option 2: Docker (Recommended)
+Use the provided `docker-compose.yml`:
+```bash
+docker-compose up -d
+```
+This will start:
+- MySQL database on port 3306
+- phpMyAdmin on port 8081 (http://localhost:8081)
 
 ### Testing
 
@@ -90,12 +121,16 @@ Run all tests:
 mvn test
 ```
 
-### H2 Database Console
+### Database Access
 
-Access the H2 console at: `http://localhost:8080/h2-console`
-- **JDBC URL**: `jdbc:h2:mem:testdb`
-- **Username**: `sa`
-- **Password**: (empty)
+Access phpMyAdmin (if using Docker): `http://localhost:8081`
+- **Username**: `root`
+- **Password**: `rootpassword`
+
+Database connection details:
+- **Host**: `localhost`
+- **Port**: `3306`
+- **Database**: `expense_tracker_db`
 
 ## API Usage Examples
 
@@ -190,10 +225,22 @@ The application handles common scenarios:
 ## Configuration
 
 Key configuration in `application.properties`:
-- Database settings (H2)
+- MySQL database settings
 - JWT secret and expiration
 - JPA/Hibernate settings
 - Server port
+
+### Environment-Specific Configuration
+
+The application supports multiple environments:
+- `application.properties` - Base configuration
+- `application-dev.properties` - Development settings
+- `application-prod.properties` - Production settings
+
+To run with specific profile:
+```bash
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
+```
 
 All endpoints (except authentication) are secured and require a valid JWT token.
 
@@ -224,3 +271,23 @@ baseURL: "http://localhost:8080/api"
 
 ### Import Postman Collection
 Import `ExpenseTracker-Postman-Collection.json` untuk testing lengkap semua endpoints.
+
+## Database Features
+
+### Data Persistence
+- **Production-ready**: Data persists between application restarts
+- **ACID Compliance**: Full transactional support
+- **Scalability**: Better performance for large datasets
+- **Backup Support**: Standard MySQL backup and recovery
+
+### JPA/Hibernate Configuration
+- **DDL Mode**: `update` - preserves existing data
+- **Dialect**: MySQL8Dialect for optimal performance
+- **Connection Pool**: HikariCP for efficient connection management
+- **Timezone**: UTC for consistent timestamp handling
+
+### Database Schema Management
+Tables are automatically created by Hibernate based on JPA entities:
+- `users` table for user authentication
+- `expenses` table for expense records
+- Foreign key relationships maintained automatically
